@@ -1,0 +1,14 @@
+PROJECT CODENAME: LOCAL_BRAIN
+CONFIDENTIALITY: HIGH
+
+1. OBJECTIVE
+The goal is to build a self-contained Generative AI agent capable of ingesting personal documents and answering questions without data leaving the local machine.
+
+2. ARCHITECTURE
+The system consists of three pillars:
+- The Ingestion Engine: Python scripts to parse PDFs and text.
+- The Memory Store: ChromaDB for vector storage.
+- The Cognitive Core: A quantized LLM running via Ollama.
+
+3. CONSTRAINTS
+All processing must occur on the CPU/GPU of the host machine. No API calls to OpenAI or Anthropic are permitted. Latency should remain under 200ms for retrieval.

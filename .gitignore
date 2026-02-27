@@ -1,0 +1,10 @@
+# Python environment
+venv/
+__pycache__/
+*.pyc
+
+# Vector Database storage
+chroma_storage/
+
+# Environment variables (Best practice for the future)
+.env
